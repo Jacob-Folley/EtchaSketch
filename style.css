@@ -1,0 +1,52 @@
+.sketchActive {
+  -webkit-animation:spin 4s linear infinite;
+   -moz-animation:spin 4s linear infinite;
+   animation:spin 4s linear infinite;
+   background: linear-gradient(black, white);
+}
+
+.sketch:hover {
+  transform: scale(1.1);
+}
+
+.rainbowActive {
+  -webkit-animation:spin 4s linear infinite;
+   -moz-animation:spin 4s linear infinite;
+   animation:spin 4s linear infinite;
+   background: linear-gradient(180deg, red, orange, yellow, green, aqua, blue, purple);
+}
+
+.rainbow:hover {
+  transform: scale(1.1);
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+#restart:hover {
+  background-color: grey;
+}
+
+#sketch {
+  font-family: 'Rammetto One', cursive;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+#restart {
+  font-family: 'Rammetto One', cursive;
+  color: white;
+  text-shadow: 2px 2px black;
+}
+
+#rainbow {
+  font-family: 'Rammetto One', cursive;
+  color: white;
+  text-shadow: '2px 2px black';
+}
