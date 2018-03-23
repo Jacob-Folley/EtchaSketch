@@ -165,8 +165,12 @@ function restartButton() {
   restart.style.boxShadow = '0px 5px 10px black';
   restart.style.background = '#DCDCDC';
 
+  function shake(){
+    container.classList.add('gridActive');
+  }
+
 // BUTTON PRESSED ANIMATION
-  function transform(){
+ function transform(){
     restart.style.transitionDuration = '0.5s';
     restart.style.transform = 'translateY(4px)';
     restart.style.boxShadow = '0px 0px 0px';
@@ -176,7 +180,9 @@ function restartButton() {
    restart.style.transitionDuration = '0.5s';
    restart.style.transform = 'translateY(-4px)';
    restart.style.boxShadow = '0px 5px 10px black';
+   container.classList.remove('gridActive');
  }
+    restart.addEventListener('click', shake);
     restart.addEventListener('click', resetGrid);
     restart.addEventListener('click', transform);
     restart.addEventListener('mouseover', transformBack);
